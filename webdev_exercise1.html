@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krizmaene's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="left">
+        <h5>Krizmaene Airizh Magbojos | Portfolio</h5>
+      </div>
+    </nav>
+
+    <main>
+      <!-- SECTION 1 -->
+      <section class="hero-section">
+        <div class="text">
+          <h2>Hi, I'm Krizmaene!</h2>
+          <p>I am a 3rd year Computer Science student at De La Salle Lipa. This portfolio showcases some of my work from the past academic years.</p>
+
+          <div class="links">
+            <a href="#portfolio">
+              <span>Portfolio</span>
+            </a>
+
+            <a href="#contact">
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: PORTFOLIO -->
+      <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+          <h1 class="text-center">My Projects</h1>
+          <div class="row">
+            <!-- PROJECT 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="project1.jpg" class="card-img-top size-adjust" alt="Project 1" />
+                <div class="card-body">
+                  <h3 class="card-title project-title" data-color="#c90000">UI/UX Design</h3>
+                  <p class="card-text">A By-Pair Final Project in HuCoInt.</p>
+                  <button class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#project1Modal">More Info</button>
+                </div>
+              </div>
+            </div>
+            <!-- PROJECT 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="project2.jpg" class="card-img-top size-adjust" alt="Project 2" />
+                <div class="card-body">
+                  <h3 class="card-title project-title" data-color="#ffe6e6">Ready, Selfie, Go!</h3>
+                  <p class="card-text">A By-Pair Activity in CoWorld.</p>
+                  <button class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#project2Modal">More Info</button>
+                </div>
+              </div>
+            </div>
+            <!-- PROJECT 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="project3.jpg" class="card-img-top size-adjust" alt="Project 3" />
+                <div class="card-body">
+                  <h3 class="card-title project-title" data-color="#ffe6e6">Snack Shack</h3>
+                  <p class="card-text">A Four-Day Business Expo.</p>
+                  <button class="btn custom-btn" data-bs-toggle="modal" data-bs-target="#project3Modal">More Info</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- SECTION 3: CONTACT -->
+      <section id="contact" class="py-5">
+        <div class="container">
+          <h1 class="text-center mb-4">Contact</h1>
+          <form id="contactForm" class="w-75 mx-auto">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name:</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message:</label>
+              <textarea class="form-control" id="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn custom-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- MODALS -->
+      <!-- PROJECT 1 MODAL -->
+      <div class="modal fade" id="project1Modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">UI/UX Design Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>This is our final project in the course of Human Computer Interaction (HuCoInt). We made a high-fidelity wireframe of our application called HomeCurate. 
+                HomeCurate is an application that allows users to create and customize the interior and exterior of their house. 
+                They can try different  room styles, wall designs, house decor, exterior designs, and more choices that they prefer having in their house area.</p>
+              <img src="project1.jpg" class="card-img-top size-adjust" alt="Project 1" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PROJECT 2 MODAL -->
+      <div class="modal fade" id="project2Modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Ready, Selfie, Go! Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>This is an activity in our course Contemporary World (CoWorld). 
+                We were tasked to take pictures inside the campus that show and describe the difference between the Global North and the Global South. 
+                Global North countries have high-income economies and advanced technological infrastructure, while Global South countries face challenges like poverty.</p>
+              <img src="project2.jpg" class="card-img-top size-adjust" alt="Project 2" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PROJECT 3 MODAL -->
+      <div class="modal fade" id="project3Modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Snack Shack Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>This is the logo of our final project in the subject Entrepreneurship when I was in Grade 12. 
+                Our business, called Snack Shack, sold scramble, churros, cinnamon rolls, and iced coffee. 
+                We won three awards: 1st Place for Most Promising Young Entrepreneur, 2nd Place for Service Awardee, and 3rd Place for Best Marketing Strategy.</p>
+              <img src="project3.jpg" class="card-img-top size-adjust" alt="Project 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
